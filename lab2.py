@@ -37,8 +37,9 @@ def name_that_shape():
     Errors: ValueError when input is a string or float
 
     """
+    sides = get_user_input()
 
-    sides = int(raw_input("Number of sides:"))
+
 
     if sides == 3:
         print("triangle")
@@ -58,5 +59,15 @@ def name_that_shape():
         print("decagon")
     else:
         print("Error")
+
+
+def get_user_input():
+    user_input = raw_input("Enter the number of sides:")
+    while not((user_input.isdigit() or (user_input[0] == "-") and user_input[1:].isdigit())):
+        user_input = raw_input ("please enter a positive integer:")
+    output = int(user_input)
+    return output
+
+
 
 # name_that_shape()
