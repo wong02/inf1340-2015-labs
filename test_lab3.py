@@ -54,7 +54,6 @@ def test_months_with_28_or_29_not_capitalized():
 # Write a test function for unexpected input
 # Hint: use a try/except block to deal with the exception
 # Hint: use data types other than strings as input
-
 try:
    days_in_month(7)
 except AttributeError:
