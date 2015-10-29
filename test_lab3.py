@@ -60,7 +60,6 @@ try:
 except AttributeError:
    assert True
 
-
 try:
    days_in_month("Sunday")
 except ValueError:
