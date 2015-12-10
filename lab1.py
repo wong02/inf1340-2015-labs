@@ -20,6 +20,7 @@ def vowel_or_consonant():
 
 
 
+
     vowel_or_consonant = raw_input("Is this a vowel or consonant?")
     if vowel_or_consonant == 'a':
         print("vowel")

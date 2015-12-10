@@ -35,21 +35,27 @@ def name_that_shape(sides):
     else:
         raise TypeError
 
+    shape_name = ""
+
     if sides == 3:
-        print("triangle")
+        shape_name = "triangle"
     elif sides == 4:
-        print("quadrilateral")
+        shape_name = "quadrilateral"
     elif sides == 5:
-        print("pentagon")
+        shape_name = "pentagon"
     elif sides == 6:
-        print("hexagon")
+        shape_name = "hexagon"
     elif sides == 7:
-        print("heptagon")
+        shape_name = "heptagon"
     elif sides == 8:
-        print("octagon")
+        shape_name = "octagon"
     elif sides == 9:
-        print("nonagon")
+        shape_name = "nonagon"
     elif sides == 10:
-        print("decagon")
+        shape_name = "decagon"
     else:
         raise ValueError
+
+    return shape_name
+
+#name_that_shape(6)
